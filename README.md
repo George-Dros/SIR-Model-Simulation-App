@@ -11,7 +11,7 @@ A simple interactive Streamlit app that visualizes how infectious diseases sprea
 
 ## 📸 Preview
 
-![App Screenshot](sir_screenshot_1)
+![App Screenshot](sir_screenshot_1.png)
 
 ## ⚙️ How to Run
 
