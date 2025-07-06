@@ -50,8 +50,10 @@ if sensitivity:
     beta_values = [beta * (1 + pct) for pct in [-0.2, -0.1, 0, 0.1, 0.2]]
 
     fig, ax = plt.subplots()
+    results = {}
     for b in beta_values:
         df = run_simulation(N, I0, R0, b, gamma, days)
+        results[b] = df
         ax.plot(df["Day"], df["Infected"], label=f'β={b:.2f}')
 
     ax.set_title("Sensitivity Analysis: Infection Curves for Different β")
@@ -63,7 +65,6 @@ if sensitivity:
 
     st.write("### Final Infected Counts by β")
     for b in beta_values:
-        df = run_simulation(N, I0, R0, b, gamma, days)
         final_infected = df["Infected"].iloc[-1]
         st.write(f"β = {b:.2f} → Infected = {final_infected:,.0f}")
 
@@ -78,3 +79,5 @@ else:
     # Final numbers
     st.write("### Final State")
     st.write(df.iloc[-1])
+
+
