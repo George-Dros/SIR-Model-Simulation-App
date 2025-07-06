@@ -16,7 +16,7 @@ Built with Python, this app allows users to simulate and visualize epidemic dyna
 ## 📸 Preview
 
 ![App Screenshot](sir_screenshot_1.png)
-![App Screenshot](sir_screenshot_2.png)
+![App Screenshot](sir_screenshot_2b.png)
 ![App Screenshot](sir_screenshot_3.png)
 
 ## 🧪 Analysis Modes
